@@ -2,6 +2,8 @@
 
 Created using [Quarto](https://quarto.org/).
 
+![](images/screenshot.png)
+
 To recreate this dashboard:
 
 1. Clone this repository.
@@ -10,3 +12,5 @@ To recreate this dashboard:
 4. Activate the virtual environment: `source env/bin/activate`
     - If using Positron: Install `ipykernel` when prompted
 5. Install required packages: `pip install -r requirements.txt`
+
+View the dashboard on [Posit Connect Cloud](https://ivelasq-mortgage-dashboard.share.connect.posit.cloud).
