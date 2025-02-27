@@ -52,23 +52,30 @@ price_fig.update_yaxes(title_text='Median Home Price (thousands $)')
 
 ## Row
 
-::: {.valuebox color='danger'}
-`{python} mortgages['fixed_30'].iloc[-1].item()`%
+```{python}
+#| content: valuebox
+#| title: "Average annual rate for a 30-year fixed mortgage in Oct. 2023"
+dict(
+  color = "danger",
+  value = mortgages['fixed_30'].iloc[-1].item()
+)
+```
 
-Average annual rate for a 30-year fixed mortgage in Oct. 2023
-:::
+```{python}
+#| content: valuebox
+#| title: "Average annual rate for a 15-year fixed mortgage in Oct. 2023"
+dict(
+  value = mortgages['fixed_15'].iloc[-1].item()
+)
+```
 
-::: {.valuebox}
-`{python} mortgages['fixed_15'].iloc[-1].item()`%
-
-Average annual rate for a 15-year fixed mortgage in Oct. 2023
-:::
-
-::: {.valuebox}
-$`{python} hoi['median_price'].iloc[-1].item()`k
-
-National median home price
-:::
+```{python}
+#| content: valuebox
+#| title: "National median home price in thousands"
+dict(
+  value = hoi['median_price'].iloc[-1].item()
+)
+```
 
 ## Row
 
@@ -85,7 +92,7 @@ hoi_fig.show()
 price_fig.show()
 ```
 
-### Column {.tabset width='40%'}
+### Column {.tabset}
 
 ```{python}
 #| title: 'Mortgage Originations per Capita'
