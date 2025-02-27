@@ -79,12 +79,10 @@ National median home price
 hoi_fig.show()
 ```
 
+
 ```{python}
-#| title: 'Mortgage Originations'
-#| height: 50%
-#| padding: 0;
-from IPython.display import Markdown
-Markdown(mortgages.to_markdown(index = False))
+#| title: 'Median Price'
+price_fig.show()
 ```
 
 ### Column {.tabset width='40%'}
@@ -95,9 +93,13 @@ Markdown(mortgages.to_markdown(index = False))
 origin_fig.show()
 ```
 
+
 ```{python}
-#| title: 'Median Price'
-price_fig.show()
+#| title: 'Mortgage Originations'
+#| height: 50%
+#| padding: 0;
+from IPython.display import Markdown
+Markdown(mortgages.to_markdown(index = False))
 ```
 
 # Data
